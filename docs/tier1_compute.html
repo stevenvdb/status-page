@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,116 +11,104 @@
 
 	  <link rel="icon" type="image/png" href="images/favicon.png" />
 	  <link rel="stylesheet" href="style.css">
-	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700,300|Open+Sans:400i,600i,700i,300,400,700,600&display=swap" crossorigin="anonymous">
 	</head>
     <body>
-		<div class="logo">
-			<a href="https://vscentrum.be/"><img class="logo" src="images/vsc_logo.png" alt="VSC logo"/></a>
-		</div>
-        <h1 class="page_title">VSC Tier1 Compute status page</h1>
-        
-        <h2>Current incidents</h2>
-        
-        <h3><a id="incident_0055">Tier-2 + Tier-1 sofia - access closed (urgent security updates)</a></h3>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <div class="site-header-inner">
+                <a href="https://vscentrum.be/"><img class="logo" src="images/vsc_logo.png" alt="Vlaams Supercomputer Centrum"/></a>
+                <a class="header-link" href="https://www.vscentrum.be/">VSC website &rarr;</a>
+            </div>
+        </header>
+        <main id="main" class="page-content">
+            <div class="page-heading">
+                <a class="back-link" href="index.html">&larr; All services</a>
+                <h1 class="page_title">VSC Tier1 Compute status page</h1>
+            </div>
+            <section class="status-section" aria-labelledby="current-heading">
+                <h2 id="current-heading">Current incidents</h2>
+                <article class="incident" id="incident_0055">
+<h3>Tier-1 Hortense cooling issues</h3>
 
-<table>
+<table class="incident-meta">
     <tr>
-        <td><span class="td_name">Start:</span></td>
-        <td>2026-10-19 17:00:00</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">End:</span></td>
-        <td>2026-10-21 17:00:00</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">Updated:</span></td>
-        <td>2026-10-21 07:07:16</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>high</td>
-    </tr>
-</table>
-
-<p> <b>[Tue 20 Oct 2026, 17:00:00]</b><br/> We are in the process of deploying the required system updates to fix the security issues that caused this emergency lockdown. </p>
-<p> Hydra and Anansi are expected to be partially online on Wednesday October 21st at 10:00 CEST. Login nodes and the OnDemand portal will be accessible to all users. Compute nodes on Hydra will be fully online by the end of the day at 17:00 CEST. </p>
-<p> Sofia is expected to be fully online by Wednesday October 21st at 12:00 CEST </p>
-<p> <b>[Mon 19 Oct 2026, 17:00 CEST]</b></br> Urgent maintenance needs to be performed because of a recently disclosed security bug in the Linux kernel.</br> We will do what we can to restore access ASAP.</br> </p>
-<p> Running jobs are not affected, jobs in the queue will only start after security updates have been applied. </p>
-
-
-<h3><a id="incident_0016">Tier-1 Hortense cooling issues</a></h3>
-
-<table>
-    <tr>
-        <td><span class="td_name">Start:</span></td>
+        <th scope="row">Start:</th>
         <td>2026-09-28 13:37:00</td>
     </tr>
     <tr>
-        <td><span class="td_name">End:</span></td>
+        <th scope="row">End:</th>
         <td>Unknown</td>
     </tr>
     <tr>
-        <td><span class="td_name">Updated:</span></td>
-        <td>2026-10-21 07:07:16</td>
+        <th scope="row">Updated:</th>
+        <td>2026-09-28 14:05:11</td>
     </tr>
     <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>low</td>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-low">low</span></td>
     </tr>
 </table>
 
+<div class="incident-description">
 <p> The cooling issue in rack 7 has re-appeared. As a result, 96 milan nodes have been drained. </p>
+</div>
+</article>
 
 
-<h3><a id="incident_0108">Access closed to Tier-2 + Tier-1 Hortense (urgent security updates)</a></h3>
+<article class="incident" id="incident_0160">
+<h3>Access closed to Tier-2 + Tier-1 Hortense (urgent security updates)</h3>
 
-<table>
+<table class="incident-meta">
     <tr>
-        <td><span class="td_name">Start:</span></td>
+        <th scope="row">Start:</th>
         <td>2026-10-19 15:30:00</td>
     </tr>
     <tr>
-        <td><span class="td_name">End:</span></td>
+        <th scope="row">End:</th>
         <td>Unknown</td>
     </tr>
     <tr>
-        <td><span class="td_name">Updated:</span></td>
-        <td>2026-10-21 07:07:16</td>
+        <th scope="row">Updated:</th>
+        <td>2026-10-19 15:31:20</td>
     </tr>
     <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>high</td>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-high">high</span></td>
     </tr>
 </table>
 
+<div class="incident-description">
 <p> <strong>Mon 19 Oct 2026, 15:30 CEST</strong></br> Urgent maintenance needs to be performed because of a recently disclosed security bug in the Linux kernel.</br> We will do what we can to restore access ASAP.</br> </p>
 <p> Running jobs are not affected, jobs in the queue will only start after security updates have been applied. </p>
+</div>
+</article>
 
-        
-        <h2>Planned maintenance</h2>
-        
-        <h3><a id="incident_0165">Tier-1 sofia - Data center planned maintenance</a></h3>
+            </section>
+            <section class="status-section" aria-labelledby="planned-heading">
+                <h2 id="planned-heading">Planned maintenance</h2>
+                <article class="incident" id="incident_0141">
+<h3>Tier-1 sofia - Data center planned maintenance</h3>
 
-<table>
+<table class="incident-meta">
     <tr>
-        <td><span class="td_name">Start:</span></td>
+        <th scope="row">Start:</th>
         <td>2026-10-28 08:00:00</td>
     </tr>
     <tr>
-        <td><span class="td_name">End:</span></td>
+        <th scope="row">End:</th>
         <td>2026-10-28 18:00:00</td>
     </tr>
     <tr>
-        <td><span class="td_name">Updated:</span></td>
-        <td>2026-10-21 07:07:16</td>
+        <th scope="row">Updated:</th>
+        <td>2026-10-08 00:10:27</td>
     </tr>
     <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>high</td>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-high">high</span></td>
     </tr>
 </table>
 
+<div class="incident-description">
 <p> The data center hosting Tier-1 <b>sofia</b> will carry out power maintenance tests on October 28th. This exercise serves to test the failover systems of the data center in case of a total power cut and for <b>sofia</b> implies a full shut-down of the cluster for the duration of the test. </p>
 <p> The following services will not be available during the shutdown:
   <ul>
@@ -129,23 +118,30 @@
   </ul>
 </p>
 <p> We will use this opportunity to carry out system updates on <b>sofia</b> and other maintenace tasks that cannot easily be done with the cluster online. A reservation is in place to ensure that no jobs will be running at the time of shutdown. Queued jobs will stay in the queue and will be automatically launched as soon as the cluster is back online. </p>
+</div>
+</article>
 
-        
-        <hr/>
+            </section>
+        </main>
+        <footer class="site-footer">
+        <nav aria-label="Service status">
+        <h2>Service status</h2>
+        <p><a href="index.html">Overview</a></p>
         <p class="navigation">
-            <a href="index.html">Overview</a> |
-            <a href="tier1_compute.html">Tier-1 Compute</a> |
-            <a href="tier1_cloud.html">Tier-1 Cloud</a> |
-            <a href="tier1_data.html">Tier-1 Data</a> |
+            <a href="tier1_compute.html">Tier-1 Compute</a>
+            <a href="tier1_cloud.html">Tier-1 Cloud</a>
+            <a href="tier1_data.html">Tier-1 Data</a>
             <a href="backbone.html">VSC backbone</a>
         </p>
         <p class="navigation">
-            <a href="tier2_antwerp.html">Tier-2 Antwerpen</a> |
-            <a href="tier2_brussels.html">Tier-2 Brussel</a> |
-            <a href="tier2_gent.html">Tier-2 Gent</a> |
+            <a href="tier2_antwerp.html">Tier-2 Antwerpen</a>
+            <a href="tier2_brussels.html">Tier-2 Brussel</a>
+            <a href="tier2_gent.html">Tier-2 Gent</a>
             <a href="tier2_leuven.html">Tier-2 Leuven</a>
         </p>
-        <hr/>
+        <p class="generated-at">This page was generated at <time datetime="2026-10-23T15:42:10+02:00">2026-10-23 15:42:10 CEST</time></p>
+        </nav>
+        </footer>
         
     </body>
 </html>
